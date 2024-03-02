@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 int total = procesHarga(qtySof, qtyFFXVI, qtySpidermen);
-
+                int diskon = (int) (total*0.10);
                 if (total > 2000000) {
                     total = (int) (total * 0.90);
                     tvResult.setText("TOTAL PEMBELIAN: Rp " + total);
@@ -87,9 +87,10 @@ public class MainActivity extends AppCompatActivity {
                 if (qtySpidermen > 0) {
                     nota += "SPIDERMEN MILES MORALES x " + qtySpidermen + "\n";
                 }
+                nota += "DISKON 10% : Rp" +diskon + "\n";
                 nota += "DISKON GOLD: Rp 50000\n";
                 nota += "DISKON DIAMOND: Rp 100000\n";
-                nota += "TOTAL YANG DIPILIH  = Rp " + total;
+                nota += "TOTAL YANG DIPILIH  : Rp " + total;
 
                 tvResult.setText(nota);
             };
