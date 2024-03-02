@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 if (qtySpidermen > 0) {
                     nota += "SPIDERMEN MILES MORALES x " + qtySpidermen + "\n";
                 }
-                nota += "DISKON 10% : Rp" +diskon + "\n";
+                nota += "DISKON 10% JIKA LEBIH 2 JT : Rp  " +diskon + "\n";
                 nota += "DISKON GOLD: Rp 50000\n";
                 nota += "DISKON DIAMOND: Rp 100000\n";
                 nota += "TOTAL YANG DIPILIH  : Rp " + total;
